@@ -1,0 +1,48 @@
+BSNL@DESKTOP-10MHHC3 MINGW64 ~/key
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/BSNL/.ssh/id_rsa):
+Created directory '/c/Users/BSNL/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/BSNL/.ssh/id_rsa
+Your public key has been saved in /c/Users/BSNL/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:l0luI6VoE3YcI4AMZ/+jM+8mv+DiknSeQOSexXW6yZY BSNL@DESKTOP-10MHHC3
+The key's randomart image is:
++---[RSA 3072]----+
+|.oo.... o        |
+| +o. . + o       |
+|o . o = o o      |
+| o o + + = o     |
+|o o . X S B      |
+| = . E o + .     |
+|..+ B            |
+|o .+.=.          |
+| o...==.         |
++----[SHA256]-----+
+
+
+BSNL@DESKTOP-10MHHC3 MINGW64 ~/key
+$ cd /c/Users/BSNL/.ssh/
+
+BSNL@DESKTOP-10MHHC3 MINGW64 ~/.ssh
+$ ls
+id_rsa  id_rsa.pub
+
+BSNL@DESKTOP-10MHHC3 MINGW64 ~/.ssh
+$ cp id_rsa.pub    ~/.ssh/authorized_keys
+
+BSNL@DESKTOP-10MHHC3 MINGW64 ~/.ssh
+
+BSNL@DESKTOP-10MHHC3 MINGW64 ~/.ssh
+$ cd ~/.ssh/
+
+BSNL@DESKTOP-10MHHC3 MINGW64 ~/.ssh
+$ ls
+authorized_keys  id_rsa  id_rsa.pub
+
+BSNL@DESKTOP-10MHHC3 MINGW64 ~/.ssh
+$ cat authorized_keys
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHg8nYkG9cW8sty0pRkvOgWwUxB3Lemb1GUKSicRoCP8R8/a8WNZ24SrCurZeUhSeAyyuXikvhzRxV1tEsp1dDySRRAOs0DOF2f8sPrDkcYRd3OPRF2x4ATnAesgPizhFvKbZQ50RB8/YFL1KDHy7jD5NUAC9xXDIM+FdPKZie+4KnufU7i3CJQHiFz9TSdLz0DS8SJn3f2SK9bILBWord+1+UIVmwMQX3uHYx6ECPwwWAdLcmubOGRhx3AJskbXYBJ0D+zGiAiRvHkQdcz3BitK8VBqp/CuliRre0KgFNGHGX9s+qnrm/dQXkPNzFVpyUHtrvbzwwFmoFlnE+6EqiHQ+yzarVw0p0uMBSJPzBdj2SiSXOJ1AhhX++4DbCA3TLGzsA3f0vr7NEYoJYSPB6RY2GLSO6ONcOP11a3G/YfgzHTi7uwiJIsgVMISLxBlrju548YskL/cWDIeiUGOta2lmCRHdI+7S3ytlMwApxwxLp3AwVfDRUuloJbA3Paic= BSNL@DESKTOP-10MHHC3
+
